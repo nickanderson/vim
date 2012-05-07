@@ -19,3 +19,18 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = https://github.com/mattn/gist-vim.git
+[submodule "bundle/SearchComplete"]
+	path = bundle/SearchComplete
+	url = https://github.com/vim-scripts/SearchComplete.git
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = git://github.com/mattn/webapi-vim.git
+[submodule "bundle/vim-named"]
+	path = bundle/vim-named
+	url = git://github.com/nickanderson/vim-named.git
