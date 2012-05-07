@@ -1,5 +1,20 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" TODO: this may not be in the correct place. It is intended to allow
+"       overriding <Leader>.
+" source ~/.vimrc.before if it exists.
+if filereadable(expand("~/.vimrc.before"))
+  source ~/.vimrc.before
+endif
+
+" =============== Pathogen Initialization ===============
+" This loads all the plugins in ~/.vim/bundle
+" Use tpope's pathogen plugin to manage all other plugins
+    runtime bundle/vim-pathogen/autoload/pathogen.vim
+    call pathogen#infect()
+    call pathogen#helptags()
 
 " Enable incrimental searching (search as you type)
 set incsearch
@@ -37,7 +52,7 @@ syntax on
 filetype plugin on 
 filetype indent on
 
-"au BufRead,BufNewFile *.cf set filetype=cf3 " override filetype for .cf files to be cf3
+au BufRead,BufNewFile *.cf set filetype=cf3 " override filetype for .cf files to be cf3
 au BufNewFile,BufRead *.zone set filetype=bindzone " Match for bind zonefile
 au BufNewFile,BufRead *.rev set filetype=bindzone " Match for bind zonefile
 
