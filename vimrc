@@ -16,6 +16,10 @@ endif
     call pathogen#infect()
     call pathogen#helptags()
 
+" Disable the Keyword Abbreviations for vim_cf3 plugin
+" I don't like how they work.
+let g:DisableCFE3KeywordAbbreviations=0
+
 " Enable incrimental searching (search as you type)
 set incsearch
 " Default search to case insensitive
