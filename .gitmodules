@@ -34,3 +34,6 @@
 [submodule "bundle/vim-named"]
 	path = bundle/vim-named
 	url = git://github.com/nickanderson/vim-named.git
+[submodule "bundle/vim-oauth"]
+	path = bundle/vim-oauth
+	url = https://github.com/mattn/vim-oauth.git
